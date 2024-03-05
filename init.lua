@@ -17,3 +17,5 @@ require("vim-options")
 require("lazy").setup("plugins")
 
 vim.keymap.set("n", "<C-s>", ":wa<CR>", {})
+vim.keymap.set("i", "<C-s>", "<Esc>:wa<CR>a", {})
+
