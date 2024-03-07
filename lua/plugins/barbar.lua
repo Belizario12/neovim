@@ -4,10 +4,9 @@ return {
 		"lewis6991/gitsigns.nvim",
   },
 	init = function()
-    vim.g.barbar_auto_setup = false
+    vim.g.barbar_auto_setup = true
 	end,
 	opts = {},
-	version = "^1.0.0",
 
   vim.keymap.set('n', '-', ':BufferPrevious<CR>'),
   vim.keymap.set('n', '=', ':BufferNext<CR>'),
