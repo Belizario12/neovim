@@ -7,7 +7,12 @@ return {
     config.setup({
     auto_install = true,
     highlight = { enabled = true },
-    indent = { enabled = true }
+    indent = { enabled = true },
+    rainbow = {
+      enable = true,
+      query = 'rainbow-parens',
+      strategy = require('ts-rainbow').strategy.global,
+  }
     })
   end
 }
