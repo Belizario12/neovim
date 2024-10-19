@@ -73,7 +73,7 @@ return {
           { name = "cssls" }, -- Para suporte a cssls
           { name = "html" }, -- Para suporte a html
           { name = "json" }, -- Para suporte a json
-          { name = "ts_ls" }, -- Para suporte a tsserver
+          { name = "tsserver" }, -- Para suporte a tsserver
           { name = "vim" }, -- Para suporte a vim
           { name = "yaml" }, -- Para suporte a yaml
           { name = "docker" }, -- Para suporte a docker
@@ -98,6 +98,7 @@ return {
           { name = "omnisharp" }, -- Para suporte a omnisharp
           { name = "perlls" }, -- Para suporte a perlls
           { name = "pylsp" }, -- Para suporte a pylsp
+          { name = "pyright" },
           { name = "angularls" }, -- Para suporte a Angular
         },
       })
