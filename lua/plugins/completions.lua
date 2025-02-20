@@ -29,9 +29,6 @@ return {
       require("luasnip.loaders.from_vscode").lazy_load()
       lspconfig.angularls.setup({
         on_attach = function(client, bufnr)
-          cmp.setup.sources({
-            { name = 'angularls', client = client }
-          })
         end
       })
 
@@ -73,7 +70,7 @@ return {
           { name = "cssls" }, -- Para suporte a cssls
           { name = "html" }, -- Para suporte a html
           { name = "json" }, -- Para suporte a json
-          { name = "tsserver" }, -- Para suporte a tsserver
+          { name = "ts_ls" }, -- Para suporte a tsserver
           { name = "vim" }, -- Para suporte a vim
           { name = "yaml" }, -- Para suporte a yaml
           { name = "docker" }, -- Para suporte a docker
