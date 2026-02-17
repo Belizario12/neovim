@@ -11,11 +11,16 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 vim.opt.swapfile = false
+vim.opt.clipboard = "unnamedplus"
 
 local opts = {}
 
 require("vim-options")
-require("lazy").setup("plugins")
+require("lazy").setup({
+  spec = {
+    { import = "plugins" },
+  },
+})
 
 vim.keymap.set("n", "<C-s>", ":wa<CR>", {})
 vim.keymap.set("i", "<C-s>", "<Esc>:wa<CR>a", {})
